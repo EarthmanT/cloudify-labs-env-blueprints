@@ -10,7 +10,7 @@ env -i cfy plugins upload \
 # Put AWS Network Blueprint before uploading the AWS DB and LB.
 env -i cfy blueprints upload -n update-blueprint.yaml \
     -b "aws-example-network" \
-    "https://github.com/cloudify-examples/aws-example-network/archive/4.3.2.zip" >> /tmp/cfy_status.txt 2>&1 &
+    "https://github.com/cloudify-examples/aws-example-network/archive/4.5.zip" >> /tmp/cfy_status.txt 2>&1 &
 
 # Install base example environment.
 env -i cfy install --timeout 1800 \
